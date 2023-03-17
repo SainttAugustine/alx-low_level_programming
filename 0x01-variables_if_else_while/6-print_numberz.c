@@ -9,8 +9,7 @@
 int main(void)
 {
 int i;
-for (i = 0; i < 11; i++) {
+for (i = 0; i < 11; i++)
 putchar(i);
-}
 return (0);
 }
