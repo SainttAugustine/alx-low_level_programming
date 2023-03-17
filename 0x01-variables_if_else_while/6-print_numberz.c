@@ -8,7 +8,6 @@
 
 int main(void)
 {
-char digits[ ] = "0123456789\n";
 int i;
 for (i = 0; i < 11; i++) {
 putchar(digits[i]);
