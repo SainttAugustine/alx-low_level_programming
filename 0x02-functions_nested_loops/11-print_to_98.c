@@ -4,13 +4,6 @@
 void print_to_98(int n);
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-
-
-/**
  * print_to_98 - prints all natural numbers from n to 98, and a new line.
  * @n: starting number.
  *
