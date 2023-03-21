@@ -9,11 +9,6 @@ void print_to_98(int n);
  * Return: Always 0 (Success)
  */
 
-int main(void)
-{
-print_to_98(0);
-return (0);
-}
 
 /**
  * print_to_98 - prints all natural numbers from n to 98, and a new line.
