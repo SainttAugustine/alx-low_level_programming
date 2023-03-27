@@ -27,4 +27,5 @@ temp = *(s - i);
 *(s - i) = *(s - len + i);
 *(s - len + i) = temp;
 }
+_putchar('!');
 }
