@@ -10,7 +10,6 @@
 
 int main(void)
 {
-    int i;
     int sum;
     char c;
 
