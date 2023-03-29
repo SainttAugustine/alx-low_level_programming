@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* _strncat - concatenates two strings
-an inputted number of bytes from src
-* @dest: destination string
-* @src: source string
-* @n: maximum number of bytes to use from src
+* _strncat - concatenates two strings.
+*an inputted number of bytes from src.
+* @dest: destination string.
+* @src: source string.
+* @n: maximum number of bytes to use from src.
 * Return: A pointer to resulting string dest
 */ 
 
