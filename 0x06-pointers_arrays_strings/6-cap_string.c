@@ -6,33 +6,23 @@
  *
  * Return: A pointer to the changed string.
  */
-char *cap_string(char *str)
+
+char *cap_string(char *s)
 {
-	int index = 0;
+int i;
 
-	while (str[index])
-	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
-			index++;
+for (i = 0; s[i] != '\0'; i++)
+{
+if (i == 0 || s[i - 1] == ' ' || s[i - 1] == '\t' || s[i - 1] == '\n' ||
+s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
+s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+s[i - 1] == '}')
+{
+if (s[i] >= 'a' && s[i] <= 'z')
+s[i] -= ('a' - 'A');
+}
+}
 
-		if (str[index - 1] == ' ' ||
-		    str[index - 1] == '\t' ||
-		    str[index - 1] == '\n' ||
-		    str[index - 1] == ',' ||
-		    str[index - 1] == ';' ||
-		    str[index - 1] == '.' ||
-		    str[index - 1] == '!' ||
-		    str[index - 1] == '?' ||
-		    str[index - 1] == '"' ||
-		    str[index - 1] == '(' ||
-		    str[index - 1] == ')' ||
-		    str[index - 1] == '{' ||
-		    str[index - 1] == '}' ||
-		    index == 0)
-			str[index] -= 32;
-
-		index++;
-	}
-
-	return (str);
+return (s);
 }
