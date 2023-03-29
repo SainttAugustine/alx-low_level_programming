@@ -1,10 +1,12 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
+ * * _strncpy - copies a string
+ * @dest: destination string
+ * @src: source string
+ * @n: maximum number of bytes to copy from src
+ * Return: A pointer to the resulting string dest.
  *
- * Return: Always 0. 
  */
 
 char *_strncpy(char *dest, char *src, int n)
