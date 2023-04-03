@@ -1,28 +1,27 @@
 #include "main.h"
-
 /**
  * _strstr - Entry point
- * @haystack: input 
- * @needle: input 
- * Return: Always 0 (success)
+ * @haystack: input
+ * @needle: input
+ * Return: Always 0 (Success)
  */
-
- char *_strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
-	for(; *haystack != '\0'; haystack++)
+	for (; *haystack != '\0'; haystack++)
 	{
-		char *| = haystack;
+		char *l = haystack;
 		char *p = needle;
 
-		while (*| == *p && *p != '\0')
+		while (*l == *p && *p != '\0')
 		{
-			|++;
+			l++;
 			p++;
 		}
 
-		if (p* == '\10')
+		if (*p == '\0')
 			return (haystack);
 	}
 
 	return (0);
 }
+
