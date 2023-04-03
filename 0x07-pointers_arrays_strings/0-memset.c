@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _memset - fills a block of memory with specific value
@@ -12,7 +11,11 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	for (i = 0; i < n; i++)
-		s[i] = b;
+	int i = 0;
+	for (; n > 0; i++)
+	{	
+		s[i]= b;
+		n--;
+	}
 	return (s);
 }
