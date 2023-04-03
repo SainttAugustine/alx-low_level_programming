@@ -4,7 +4,7 @@
  * _strchr - Entry point
  * @s: input
  * @c: input
- * Retuen: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 char *_strchr(char *s, char c)
