@@ -1,15 +1,11 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
  * _atoi - converts a string to an integer
  * @s: string to be converted
- *
  * Return: the int converted from the string
  */
-
 int _atoi(char *s)
-
 {
 int i, d, n, len, f, digit;
 i = 0;
@@ -24,7 +20,6 @@ while (i < len && f == 0)	{
 if (s[i] == '-')
 ++d;
 if (s[i] >= '0' && s[i] <= '9')
-
 {
 digit = s[i] - '0';
 if (d % 2)
@@ -64,8 +59,6 @@ num1 = _atoi(argv[1]);
 num2 = _atoi(argv[2]);
 result = num1 * num2;
 printf("%d\n", result);
-
-
 return (0);	
 }
 
