@@ -10,7 +10,6 @@
  */
 
 struct dog
-	
 {
 		char *name;
 		float age;
@@ -21,7 +20,7 @@ struct dog
 /**
  * dog_t - typedef for struct dog
  */
-	
+
 typedef struct dog dog_t;
 
 
@@ -31,6 +30,4 @@ typedef struct dog dog_t;
 	void free_dog(dog_t *d);
 	char *_strcpy(char *dest, char *src);
 	int _strlen(char *s);
-
-
 #endif
